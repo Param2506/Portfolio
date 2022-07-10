@@ -5,12 +5,8 @@ body{
     display: flex;
     width: 49vw;
 }
-.navbar-text{
-    width: 100%;
-}
-.container{
-    width: 77%;
-    margin-right: 0;
+.navitem{
+    padding: 0 5px;
 }
 .aboutme::after{
     font-size: 18rem;

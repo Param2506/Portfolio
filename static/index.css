@@ -124,9 +124,11 @@ body{
     height: 10vh;
 }
 
-.navbar{
-    width: 98vw;
+.navigation{
+    display: flex;
+    width: 97vw;
     margin: auto;
+    align-items: center;
 }
 
 /* .navbar:nth-child(2){
@@ -136,7 +138,7 @@ body{
 .site{
     font-size: 2rem;
     letter-spacing: 2px;
-    margin-left: 18px;
+    margin: 10px;
 }
 .site:hover{
     color:rgb(255, 255, 255);
@@ -144,34 +146,32 @@ body{
 }
 
 .secnav{
-    width: 83%;
+    position: absolute;
+    top: 5px;
+    right: 2vw;
+    width: 34vw;
     display: flex;
+    justify-content: end;
 }
 
-.container{
-    display: flex;
-    width: 80vw;
-    justify-content: flex-end;
-    overflow: hidden;
-}
 .navbar-text{
     font-size: 0.9rem;
-    width: 34%;
-    transition: width 0.5s;
+    transition: all 0.5s;
     display: flex;
-    flex-direction: row;
+    height: 50px;
+    align-items: end;
+    overflow: hidden;
 }
 
 
 .navbar-icons{
     display: flex;
-    width: 11%;
     margin-top: 5px;
     align-items: center;
-    transition: width 1s;
+    transition: all 1s;
 }
 .disable{
-    width: 1px;
+    width: 0;
     overflow: hidden;
 }
 
@@ -184,10 +184,10 @@ body{
     box-shadow: -3px 3px 3px silver;
     filter:invert(40%)
 }
-.nav-item{
+.navitem{
     padding: 0 8px;
 }
-.nav-item:hover{
+.navitem:hover{
     font-size: 1rem;
     font-style: oblique;
     text-shadow: 2px 2px 2px grey;
@@ -196,6 +196,7 @@ body{
 .nav-toggle{
     transform: rotate(180deg);
     width: 38px;
+    margin-left: 8px;
     margin-bottom: 11px;
     background: none;
     border-style: none;
