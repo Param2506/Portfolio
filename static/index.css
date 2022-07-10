@@ -149,7 +149,6 @@ body{
     position: absolute;
     top: 5px;
     right: 2vw;
-    width: 34vw;
     display: flex;
     justify-content: end;
 }
@@ -167,6 +166,7 @@ body{
 .navbar-icons{
     display: flex;
     margin-top: 5px;
+    width: 7vw;
     align-items: center;
     transition: all 1s;
 }
