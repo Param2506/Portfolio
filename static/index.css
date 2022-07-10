@@ -1,0 +1,648 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Arima', cursive;
+    box-sizing: border-box;
+    list-style: none;
+}
+html{
+    scroll-behavior: smooth;
+    font-size: 18px;
+}
+a{
+    text-decoration: none;
+}
+:root {
+    --bgclr : rgba(0, 0, 0, 0.922);
+    --grad : linear-gradient(red,yellow);
+}
+
+::-webkit-scrollbar{
+    width: 8px;
+}
+
+::-webkit-scrollbar-track{
+    background-color: black;
+}
+
+::-webkit-scrollbar-button{
+    background: grey;
+
+}
+
+::-webkit-scrollbar-thumb{
+    background: grey;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover{
+    border: 1px solid whitesmoke;
+}
+
+@keyframes slidedown {
+    0%{
+        height: 0%;
+    }
+    100%{
+        height: 100%;
+    }
+    
+}
+
+@keyframes liftup {
+    0%{
+        box-shadow: 0 0 0;
+        text-shadow: 0 0 0;
+    }
+    5%{
+        transform: translateY(-7px);
+        box-shadow: -5px 5px 11px black;
+        text-shadow: 3px -3px 2px rgb(0, 0, 0);
+    }
+    100%{
+        transform: translateY(-7px);
+        box-shadow: -5px 5px 11px black;
+        text-shadow: 3px -3px 2px rgb(0, 0, 0);
+    }
+}
+
+@keyframes clrshift {
+    0%{
+        color: grey;
+        text-shadow: 2px 2px 2px rgb(255, 255, 255);
+    }
+    50%{
+        color: rgb(0, 0, 0);
+        text-shadow: 2px 2px 2px rgb(255, 255, 255);
+    }
+    100%{
+        color: grey;
+        text-shadow: 2px 2px 2px rgb(255, 255, 255);
+    }
+}
+
+@keyframes pop {
+    0%{
+        color: rgb(255, 255, 255);
+        text-shadow: 2px 2px 2px rgb(0, 0, 0);
+    }
+    100%{
+        color: rgb(0, 0, 0);
+        text-shadow: 2px 2px 2px rgb(255, 255, 255);
+    }
+}
+
+@keyframes shadows {
+    0%{
+        background-position: -500%;
+    }
+    100%{
+        background-position: 500%;
+    }
+}
+.shine{
+    background: linear-gradient(90deg, #000, #fff, #000);
+    background-size: 80%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgb(255, 255, 255, 0.2);
+    animation: shadows 4s infinite;
+    overflow: hidden;
+    background-repeat: no-repeat;
+}
+
+body{
+    background: var(--bgclr);
+}
+
+/* navbar styling */
+
+.sticky{
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    height: 10vh;
+}
+
+.navbar{
+    width: 98vw;
+    margin: auto;
+}
+
+/* .navbar:nth-child(2){
+    margin: auto;
+
+} */
+.site{
+    font-size: 2rem;
+    letter-spacing: 2px;
+    margin-left: 18px;
+}
+.site:hover{
+    color:rgb(255, 255, 255);
+    text-shadow: 2px 2px 3px grey;
+}
+
+.secnav{
+    width: 83%;
+    display: flex;
+}
+
+.container{
+    display: flex;
+    width: 80vw;
+    justify-content: flex-end;
+    overflow: hidden;
+}
+.navbar-text{
+    font-size: 0.9rem;
+    width: 34%;
+    transition: width 0.5s;
+    display: flex;
+    flex-direction: row;
+}
+
+
+.navbar-icons{
+    display: flex;
+    width: 11%;
+    margin-top: 5px;
+    align-items: center;
+    transition: width 1s;
+}
+.disable{
+    width: 1px;
+    overflow: hidden;
+}
+
+.navicons{
+    border-radius: 50%;
+    box-shadow: -1px 1px 1px grey;
+    filter: invert(75%);
+}
+.navicons:hover{
+    box-shadow: -3px 3px 3px silver;
+    filter:invert(40%)
+}
+.nav-item{
+    padding: 0 8px;
+}
+.nav-item:hover{
+    font-size: 1rem;
+    font-style: oblique;
+    text-shadow: 2px 2px 2px grey;
+}
+
+.nav-toggle{
+    transform: rotate(180deg);
+    width: 38px;
+    margin-bottom: 11px;
+    background: none;
+    border-style: none;
+}
+
+.nav-toggle .burger1{
+    display: block;
+    border-radius: 10px;
+    margin: 3px;
+    width: 30px;
+    height: 3px;
+    background-color: rgb(142, 142, 142);
+    transform: all .3s;
+}
+.nav-toggle .burger2{
+    display: block;
+    border-radius: 10px;
+    margin: 3px;
+    width: 20px;
+    height: 3px;
+    background-color: rgb(142, 142, 142);
+    transition: all .3s;
+}
+.nav-toggle .burger3{
+    display: block;
+    border-radius: 10px;
+    margin: 3px;
+    width: 30px;
+    height: 3px;
+    background-color: rgb(142, 142, 142);
+    transition: all .3s
+}
+.nav-toggle.open .burger3{
+    transform: rotate(-45deg) translate(4px , -4px);
+}
+.nav-toggle.open .burger1{
+    transform: rotate(45deg) translate(4px , 4px);
+}
+.nav-toggle.open .burger2{
+    transform: translateX(50px);
+    background: transparent;
+}
+
+/* header styling */
+.intro{
+    width: 98vw;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.intro::before{
+    content: '';
+    position: absolute;
+    top:0;
+    left: 0;
+    width: inherit;
+    height: inherit;
+    z-index: -1;
+    background: url("https://embetronicx.com/wp-content/uploads/2017/08/background.jpg") no-repeat center center/cover;
+    filter: blur(3px);
+    opacity: 0.8;
+    animation: slideup 2s;
+}
+.introtext{
+    margin-left: 90px;
+}
+.name{
+    font-size: 5.5rem;
+    color: white;
+}
+.undername{
+    color: rgb(128, 128, 128);
+    font-size: 1.7rem;
+}
+
+.introimg img{
+    width: 350px;
+    height: 380px;
+    border-radius: 10% 50%;
+    opacity: 0.9;
+}
+
+/* aboutme styling */
+
+
+.aboutme{
+    width: 99vw;
+    height: 100vh;
+}
+.aboutme::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    width: inherit;
+    height: inherit;
+    z-index: -1;
+    background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT78PFP5HuGD5BJUhCqnY4crXgoTcCJP7_yJA&usqp=CAU") no-repeat center center/cover;
+    filter: blur(5px);
+    opacity: 0.9;
+}
+
+.aboutme::after{
+    content: "ABOUT";
+    color: black;
+    background-color: transparent;
+    top: 127vh;
+    font-size: 22rem;
+    position:absolute;
+    text-shadow: 4px 4px 4px grey;
+    z-index: -2;
+    width: inherit;
+    height: inherit;
+}
+.margin{
+    height: 14vh;
+}
+
+.desc{
+    width: 94%;
+    height: 80%;
+    padding-top: 20px;
+    padding-left: 40px;
+    padding-bottom: 40px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin:auto;
+    animation: liftup 40s infinite;
+}
+
+.aboutcontent{
+    width: 50%;
+    margin: 0;
+    padding: 30px;
+
+}
+
+.abouttitle{
+    font-size: 2rem;
+
+}
+
+.aboutp{
+    color: rgb(170, 170, 170);
+}
+
+/* skills stlying */
+
+.skill{
+    width: 100%;
+    height: 100vh;
+}
+
+.skill::after{
+    content: "SKILLS";
+    color: black;
+    background-color: transparent;
+    font-size: 22rem;
+    top: 200vh;
+    position:absolute;
+    text-shadow: 10px 10px 10px black;
+    width: inherit;
+    height: inherit;
+    z-index: -2;
+    
+}
+.skill::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    width: inherit;
+    height: inherit;
+    z-index: -1;
+    background: url("https://us.123rf.com/450wm/peshkov/peshkov1506/peshkov150600008/41023430-blank-black-diary-and-accessories.jpg?ver=6") no-repeat center center/cover;
+    filter: blur(4px);
+    opacity: 0.6;
+}
+
+.bfrall{
+    width: 90%;
+    height: 82%;
+    margin:auto;
+    animation: liftup 60s infinite;
+}
+
+.allofem{
+    font-size: 1.5rem;
+    display: grid;
+    grid-template-rows: repeat(6 ,90px);
+    grid-template-columns: repeat(3, 2fr);
+    padding: 60px;
+}
+.p{
+    animation: pop 3s infinite;
+}
+.p:nth-child(1){
+    animation-delay: 0.2s;
+}
+.p:nth-child(2){
+    animation-delay: 0.7s;
+}
+.p:nth-child(3){
+    animation-delay: 1s;
+}
+.p:nth-child(4){
+    animation-delay: 1.2s;
+}
+.p:nth-child(5){
+    animation-delay: 1.6s;
+}
+.p:nth-child(6){
+    animation-delay: 2.2s;
+}
+.p:nth-child(7){
+    animation-delay: 2.7s;
+}
+.p:nth-child(8){
+    animation-delay: 3s;
+}
+.p:nth-child(9){
+    animation-delay: 3.3s;
+}
+.p:nth-child(10){
+    animation-delay: 3.7s;
+}
+
+.lang{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    font-size: 1.9rem;
+}
+
+/* projects styling */
+
+.project{
+    width: 100%;
+    height: 100vh;
+}
+
+.project::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    width: inherit;
+    height: inherit;
+    z-index: -1;
+    background: url("https://ik.imagekit.io/houseofcoders/wp-content/uploads/2017/10/portfolio-background.png") no-repeat center center/cover;
+    filter: blur(4px);
+    opacity: 0.6;
+}
+
+.project::after{
+    content: "PROJECTS";
+    color: black;
+    background-color: transparent;
+    font-size: 14rem;
+    top: 348vh;
+    position:absolute;
+    text-shadow: 10px 10px 10px black;
+    z-index: -2;
+    width: inherit;
+    height: inherit;
+}
+
+.cara{
+    height: 80%;
+    width: 90%;
+    margin: auto;
+    animation: liftup 50s infinite;
+}
+
+.carainnerimg{
+    width: 500px;
+    height: 300px;
+    margin: 10px;
+    border-radius: 20px;
+    box-shadow: 4px 4px 9px silver;
+    place-self: center;
+    filter: brightness(85%)
+
+}
+
+.carainnerp{
+    color: whitesmoke;
+    text-shadow: 2px 2px 2px black;
+    margin-top: 30px;
+    width: 75%;
+
+}
+
+.carainnerbtn{
+    text-decoration: none;
+    margin: 20px;
+    position: relative;
+    padding: 11px 13px;
+    background: rgb(0, 0, 0);
+    color: rgb(244, 244, 244);
+    border-radius: 30px;
+    text-align: center;
+    text-shadow: none;
+}
+.carainnerbtn::before, .carainnerbtn::after{
+    content: '';
+    position: absolute;
+    opacity: 0.3;
+    background: black;
+    border-radius: inherit;
+    box-shadow: 2px 2px 3px silver;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: transform 0.3s ease;
+}
+.carainnerbtn:hover{
+    color: silver;
+    transform: translate(-12px, -12px);
+}
+.carainnerbtn:hover::after{
+    transform: translate(6px, 6px);
+}
+.carainnerbtn:hover::before{
+    transform: translate(12px, 12px);
+}
+
+
+.life{
+    width: 100%;
+    height: 100vh;
+}
+.life::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    width: inherit;
+    height: inherit;
+    z-index: -1;
+    background: url("https://media.istockphoto.com/photos/stylish-table-desk-workspace-on-black-background-picture-id1296308898?b=1&k=20&m=1296308898&s=170667a&w=0&h=dTgxOKou6YkubnC2uv5t2qVE9s6ZGwbyf6DtmYwaGzo=") no-repeat center center/cover;
+    filter: blur(4px);
+    opacity: 0.6;
+}
+
+.life::after{
+    content: "Lifestyle";
+    color: black;
+    background-color: transparent;
+    font-size: 14rem;
+    top: 442vh;
+    position:absolute;
+    text-shadow: -2px 2px 2px rgb(255, 255, 255);
+    width: inherit;
+    height: inherit;
+    z-index: -2;
+
+    
+}
+
+.lifeinner{
+    padding: 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 40px;
+    width: 92%;
+    height: 83%;
+    animation: liftup 50s infinite;
+    margin:auto;
+}
+.lifeinnerp{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    width: 75%;
+    color: silver;
+    filter: brightness(120%);
+    text-shadow: 2px 2px 2px black;
+
+}
+
+.lifeinnerl{
+    filter: brightness(120%);
+    list-style: georgian;
+    color: silver;
+    text-shadow: 2px 2px 2px black;
+}
+
+
+
+/* contact styling */
+
+.contact{
+    width: 100%;
+    height: 100vh;
+}
+.contact::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    width: inherit;
+    height: inherit;
+    z-index: -1;
+    background: url("https://embetronicx.com/wp-content/uploads/2017/08/background.jpg") no-repeat center center/cover;
+    filter: blur(3px);
+    opacity: 0.8;
+    animation: slideup 2s infinite;
+}
+
+.condet{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    justify-content: center;
+    align-items: center;
+    height: 70%;
+    width: 60%;
+    box-shadow: -10px 10px 15px rgb(97, 97, 97);
+    margin: auto;
+}
+.contit{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    place-self: center;
+}
+.innercon{
+    padding: 20px 5px;
+    color: silver;
+    text-shadow:1px 1px 2px rgb(0, 0, 0);
+    place-self: center;
+}
+.ininnercon{
+    color: silver;
+    text-shadow: 2px 2px 2px black;
+    place-self: center;
+}
+.coninnerbtn{
+    text-decoration: none;
+    margin: 20px;
+    position: relative;
+    padding: 11px 13px;
+    background: rgb(0, 0, 0);
+    color: rgb(244, 244, 244);
+    border-radius: 30px;
+    text-align: center;
+    text-shadow: none;
+}
+.coninnerbtn:hover{
+    color: grey;
+    border: 2px solid white;
+}

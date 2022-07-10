@@ -1,0 +1,150 @@
+.sticky{
+    height: 25vh;
+}
+.margin{
+    height: 35vh;
+}
+.navbar{
+    width: 285vw;
+    display: flex;
+    flex-direction: row;
+}
+.secnav{
+    width: 0;
+}
+.site {
+    font-size: 5rem;
+    letter-spacing: 5px;
+    margin-left: 40px;
+}
+.nav-toggle .burger1{
+    width: 90px;
+    height: 15px;
+}
+.nav-toggle .burger2{
+    width: 60px;
+    height: 15px;
+}
+.nav-toggle .burger3{
+    width: 90px;
+    height: 15px;
+}
+.intro {
+    width: 316vw;
+    height: 317vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.undername{
+    font-size: 3.5rem;
+}
+.name{
+    font-size: 10rem;
+}
+.aboutme{
+    width: 316vw;
+    height: 317vh;
+}
+.aboutme::after{
+    top:430vh;
+}
+.desc{
+    flex-direction: column;
+}
+.introimg img {
+    width: 700px;
+    height: 700px;
+}
+.abouttitle {
+    font-size: 6rem;
+}
+.aboutcontent{
+    width: 80%;
+}
+.aboutp {
+    color: rgb(170, 170, 170);
+    font-size: 2rem;
+}
+.skill{
+    height: 317vh;
+    width: 316vw;
+}
+.skill::after{
+    top: 655vh;
+}
+.allofem {
+    font-size: 3rem;
+    display: grid;
+    grid-template-rows: repeat(13 ,90px);
+    grid-template-columns: repeat(1, 1fr);
+    padding: 60px;
+    gap: 15px;
+}
+.lang {
+    font-size: 3.9rem;
+}
+.project {
+    height: 317vh;
+    width: 178vh;
+}
+.project::after{
+    top:1190vh;
+}
+.carainnerimg {
+    width: 920px;
+    height: 500px;
+    margin-bottom: 30px;
+}
+.carainnerp {
+    color: whitesmoke;
+    text-shadow: 2px 2px 2px black;
+    margin-top: 30px;
+    width: 100%;
+    font-size: 1.7rem;
+}
+.carainnerbtn{
+    margin: 0 365px;
+    font-size: 1.5rem;
+}
+.carahead{
+    font-size: 4rem;
+}
+.life {
+    height: 317vh;
+    width: 178vh;
+}
+.life::after{
+    top: 1432vh;
+}
+.lifeinnerl{
+    font-size: 2rem;
+}
+.lifeinnerp{
+    width: 95%;
+    font-size: 2rem;
+
+}
+.lifeinnerhead{
+    font-size: 3rem;
+}
+.contact{
+    height: 317vh;
+    width: 178vh;
+
+}
+.condet{
+    padding: 50px;
+    width: 80%;
+}
+.contit{
+    font-size: 4rem;
+}
+.innercon{
+    font-size: 2.5rem;
+}
+.coninnerbtn{
+    font-size: 1.5rem;
+    width: 200px;
+    place-self: center;
+}
