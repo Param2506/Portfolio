@@ -134,6 +134,7 @@ ul{
 .condet{
     height: 66%;
     width: 88%;
+    box-shadow: -7px 7px 10px rgb(0 0 0);
 }
 
 .innercon{

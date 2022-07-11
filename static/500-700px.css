@@ -122,6 +122,9 @@ ul{
 .innercon{
     font-size: 0.9rem;
 }
+.condet{
+    box-shadow: -7px 7px 10px rgb(0 0 0);
+}
 .coninnerbtn{
     margin: 0;
     font-size: 0.7rem;
