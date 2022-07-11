@@ -1,6 +1,9 @@
 body{
     overflow-x: hidden;
 }
+ul{
+    padding-left: 0;
+}
 .margin{
     height: 22vh;
 }
@@ -21,9 +24,6 @@ body{
 }
 .nav-toggle{
     display: none;
-}
-.navbar-text{
-    margin-right: 55px;
 }
 .aboutme{
     width: 99vw;
@@ -48,12 +48,12 @@ body{
 }
 .allofem{
     padding: 10px;
-    font-size: 1rem;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(10 ,50px);
+    font-size: 0.8rem;
     gap: 5px;
-    display: grid;
+    row-gap: 18px;
+    grid-template-rows: repeat(6, 40px);
 }
+
 .skill::after{
     top: 215vh;
     font-size: 8rem;
@@ -62,7 +62,7 @@ body{
     height: 68%;
 }
 .lang{
-    font-size: 1.4rem;
+    font-size: 1.2rem;
 }
 
 .project {
@@ -118,4 +118,12 @@ body{
 .lifeinnerp{
     width: 100%;
     font-size: 0.7rem;
+}
+.innercon{
+    font-size: 0.9rem;
+}
+.coninnerbtn{
+    margin: 0;
+    font-size: 0.7rem;
+    padding: 7px 10px;
 }

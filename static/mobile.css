@@ -1,150 +1,138 @@
 .sticky{
-    height: 25vh;
+    height: 17vh;
 }
 .margin{
-    height: 35vh;
+    height: 17vh;
 }
-.navbar{
-    width: 285vw;
-    display: flex;
-    flex-direction: row;
+.site{
+    font-size: 1.2rem;
+}
+.navigation{
+    align-items: center;
+    flex-direction: column;
 }
 .secnav{
-    width: 0;
+    position: static;
 }
-.site {
-    font-size: 5rem;
-    letter-spacing: 5px;
-    margin-left: 40px;
+.nav-toggle{
+    display: none;
 }
-.nav-toggle .burger1{
-    width: 90px;
-    height: 15px;
-}
-.nav-toggle .burger2{
-    width: 60px;
-    height: 15px;
-}
-.nav-toggle .burger3{
-    width: 90px;
-    height: 15px;
-}
-.intro {
-    width: 316vw;
-    height: 317vh;
-    display: flex;
+.navbar-text{
     align-items: center;
-    justify-content: center;
+    font-size: 0.6rem;
+}
+ul{
+    padding-left: 0;
+}
+
+.introtext {
+  margin-left: 10px;
 }
 .undername{
-    font-size: 3.5rem;
+    font-size: 1.5rem;
 }
 .name{
-    font-size: 10rem;
+    word-wrap: none;
+    font-size: 2.2rem;
 }
-.aboutme{
-    width: 316vw;
-    height: 317vh;
-}
+
+
 .aboutme::after{
-    top:430vh;
+    font-size: 5rem;
 }
 .desc{
     flex-direction: column;
 }
 .introimg img {
-    width: 700px;
-    height: 700px;
+    max-width: 150px;
+    max-height: 150px;
 }
-.abouttitle {
-    font-size: 6rem;
-}
+
 .aboutcontent{
-    width: 80%;
+    width: 100%;
+    padding: 0;
+    font-size: 0.7rem;
 }
-.aboutp {
-    color: rgb(170, 170, 170);
-    font-size: 2rem;
-}
-.skill{
-    height: 317vh;
-    width: 316vw;
-}
+
 .skill::after{
-    top: 655vh;
+    font-size: 5rem;
 }
 .allofem {
-    font-size: 3rem;
-    display: grid;
-    grid-template-rows: repeat(13 ,90px);
-    grid-template-columns: repeat(1, 1fr);
-    padding: 60px;
-    gap: 15px;
+    display: block;
+    padding: 10px;
+    font-size: 0.7rem;
 }
+.allofem > div{
+    margin: 13px;
+}
+ 
 .lang {
-    font-size: 3.9rem;
+    font-size: 1rem;
 }
-.project {
-    height: 317vh;
-    width: 178vh;
-}
+
 .project::after{
-    top:1190vh;
-}
-.carainnerimg {
-    width: 920px;
-    height: 500px;
-    margin-bottom: 30px;
-}
-.carainnerp {
-    color: whitesmoke;
-    text-shadow: 2px 2px 2px black;
-    margin-top: 30px;
-    width: 100%;
-    font-size: 1.7rem;
-}
-.carainnerbtn{
-    margin: 0 365px;
-    font-size: 1.5rem;
-}
-.carahead{
     font-size: 4rem;
 }
-.life {
-    height: 317vh;
-    width: 178vh;
+.carainnerimg {
+   max-width: 250px;
+   max-height: 140px;
+   margin-bottom: 5px;
 }
+.carainnerp {
+    width: 100%;
+    font-size: 0.5rem;
+    margin-top: 5px;
+}
+.carousel-control-next{
+    margin-right: -31px;
+}
+.carousel-control-prev{
+    margin-left: -35px;
+}
+.carainnerbtn{
+    padding: 6px 7px;
+    margin: 0;
+    font-size: 0.4rem;
+    left: 30vw;
+    
+}
+.carahead{
+    font-size: 1rem;
+}
+
+
 .life::after{
-    top: 1432vh;
+    font-size: 4rem;
+}
+.lifeinner{
+    padding: 10px;
+    gap: 3px;
+    height: 77%;
 }
 .lifeinnerl{
-    font-size: 2rem;
+    font-size: 0.6rem;
 }
 .lifeinnerp{
-    width: 95%;
-    font-size: 2rem;
+    width: 100%;
+    font-size: 0.6rem;
+
 
 }
 .lifeinnerhead{
-    font-size: 3rem;
+    font-size: 1rem;
 }
-.contact{
-    height: 317vh;
-    width: 178vh;
 
-}
 .condet{
-    padding: 50px;
-    width: 80%;
+    width: 88%;
 }
-.contit{
-    font-size: 4rem;
-}
+
 .innercon{
-    font-size: 2.5rem;
+    font-size: 0.8rem;
+   
 }
 .coninnerbtn{
-    font-size: 1.5rem;
-    width: 200px;
+    padding: 7px 10px;
+    font-size: 0.6rem;
+    margin: 0;
     place-self: center;
 }

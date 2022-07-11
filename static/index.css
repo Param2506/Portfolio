@@ -242,7 +242,7 @@ body{
 
 /* header styling */
 .intro{
-    width: 98vw;
+    width: 100%;
     height: 90vh;
     display: flex;
     align-items: center;
@@ -284,7 +284,7 @@ body{
 
 
 .aboutme{
-    width: 99vw;
+    width: 100%;
     height: 100vh;
 }
 .aboutme::before{
