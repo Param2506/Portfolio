@@ -27,6 +27,7 @@ ul{
 
 .introtext {
   margin-left: 10px;
+  margin-bottom: 90px;
 }
 .undername{
     font-size: 1.5rem;
@@ -41,6 +42,7 @@ ul{
     font-size: 5rem;
 }
 .desc{
+    height: 75%;
     flex-direction: column;
 }
 .introimg img {
@@ -57,6 +59,9 @@ ul{
 .skill::after{
     font-size: 5rem;
 }
+.bfrall{
+    height: 77%;
+}
 .allofem {
     display: block;
     padding: 10px;
@@ -72,6 +77,9 @@ ul{
 
 .project::after{
     font-size: 4rem;
+}
+.cara{
+    height: 75%;
 }
 .carainnerimg {
    max-width: 250px;
@@ -107,7 +115,7 @@ ul{
 .lifeinner{
     padding: 10px;
     gap: 3px;
-    height: 77%;
+    height: 72%;
 }
 .lifeinnerl{
     font-size: 0.6rem;
@@ -123,6 +131,7 @@ ul{
 }
 
 .condet{
+    height: 66%;
     width: 88%;
 }
 
