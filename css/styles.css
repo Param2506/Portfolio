@@ -894,8 +894,8 @@ textarea {
     width: 100% !important;
 }
     .contact-bottom {
-    display: flex;
-    flex-direction: column;
+    display: flex !important;
+    flex-direction: column !important;
 }
 
     .row {
