@@ -1,0 +1,132 @@
+body{
+    overflow-x: hidden;
+}
+ul{
+    padding-left: 0;
+}
+.margin{
+    height: 22vh;
+}
+.introtext{
+    margin-left: 20px;
+}
+.undername{
+    font-size: 1.5rem;
+}
+.name{
+    font-size: 3rem;
+}
+.navigation{
+    flex-direction: column;
+}
+.secnav{
+    position: static;
+}
+.nav-toggle{
+    display: none;
+}
+.aboutme{
+    width: 99vw;
+    height: 100vh;
+}
+.aboutme::after{
+    top:140vh;
+    font-size: 8rem;
+}
+.desc{
+    height: 70%;
+    flex-direction: column;
+}
+.aboutcontent{
+    padding: 10px;
+    width: 100%;
+    font-size: 0.8rem;
+}
+.introimg img {
+    width: 222px;
+    height: 222px;
+}
+.allofem{
+    padding: 10px;
+    font-size: 0.8rem;
+    gap: 5px;
+    row-gap: 18px;
+    grid-template-rows: repeat(6, 40px);
+}
+
+.skill::after{
+    top: 215vh;
+    font-size: 8rem;
+}
+.bfrall{
+    height: 68%;
+}
+.lang{
+    font-size: 1.2rem;
+}
+
+.project {
+    height: 100vh;
+    width: 100%;
+}
+.project::after{
+    top: 366vh;
+    font-size: 6rem;
+}
+.cara{
+    height: 74%;
+}
+.carainnerimg {
+    width: 250px;
+    height: 150px;
+    margin-bottom: 5px;
+}
+.carousel-control-next{
+    margin-right: -40px;
+}
+.carousel-control-prev{
+    margin-left: -40px;
+}
+.carainnerp {
+    color: whitesmoke;
+    text-shadow: 2px 2px 2px black;
+    margin-top: 10px;
+    width: 100%;
+    font-size: 0.6rem;
+}
+.carainnerbtn{
+    font-size: 0.7rem;
+    margin: 0;
+}
+.carahead{
+    font-size: 1.3rem;
+}
+.lifeinner{
+    padding: 8px;
+    gap: 10px;
+    height: 72%;
+}
+.life::after{
+    font-size: 7rem;
+}
+.lifeinnerhead{
+    font-size: 1rem;
+}
+.lifeinnerl{
+    font-size: 0.7rem;
+}
+.lifeinnerp{
+    width: 100%;
+    font-size: 0.7rem;
+}
+.innercon{
+    font-size: 0.9rem;
+}
+.condet{
+    box-shadow: -7px 7px 10px rgb(0 0 0);
+}
+.coninnerbtn{
+    margin: 0;
+    font-size: 0.7rem;
+    padding: 7px 10px;
+}

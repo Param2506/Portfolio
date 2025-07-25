@@ -1,0 +1,53 @@
+body{
+    overflow-x: hidden;
+}
+.navitem{
+    padding: 0 5px;
+}
+.aboutme::after{
+    font-size: 18rem;
+}
+.skill::after{
+    font-size: 18rem;
+}
+.allofem{
+    padding: 20px;
+    font-size: 1.2rem;
+    grid-template-rows: repeat(5 ,80px);
+}
+.project::after{
+    font-size: 12rem;
+}
+.carahead{
+    font-size: 2rem;
+}
+.carainnerp{
+    font-size: 1rem;
+    margin-top: 10px;
+}
+.carainnerimg{
+    width: 298px;
+    height: 222px;
+}
+.carainnerbtn{
+    margin: 15px;
+    padding: 5px 8px;
+}
+.life::after{
+    font-size: 12rem;
+}
+.lifeinner{
+    gap: 20px;
+}
+.lifeinnerhead{
+    font-size: 1.7rem;
+}
+.lifeinnerl{
+    font-size: 0.9rem;
+}
+.lifeinnerp{
+    font-size: 0.9rem;
+}
+.condet{
+    grid-template-columns: repeat(2, 250px);
+}
